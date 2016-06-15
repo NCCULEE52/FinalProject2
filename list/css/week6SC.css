@@ -1,0 +1,143 @@
+body {
+  background-color: #f0f0f0; }
+
+section {
+  margin-top: 70px; }
+
+.container {
+  max-width: 980px; }
+
+.nav-customized {
+  padding-top: 8px;
+  background-color: #f0f0f0; }
+  .nav-customized > .container {
+    background-color: #3c3c3c;
+    padding-left: 0px; }
+  .nav-customized ul > li:nth-of-type(1), .nav-customized ul > li:nth-of-type(2), .nav-customized ul > li:nth-of-type(3), .nav-customized ul > li:nth-of-type(4) {
+    background-color: white; }
+  .nav-customized ul > li:nth-of-type(5) {
+    background-color: #d2d2d2; }
+  .nav-customized ul > li:nth-of-type(6), .nav-customized ul > li:nth-of-type(7) {
+    background-color: #929292; }
+  .nav-customized ul > li:nth-of-type(8), .nav-customized ul > li:nth-of-type(9) {
+    background-color: #5a5a5a; }
+  .nav-customized ul > li > .genre-with-line {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .nav-customized ul > li > .genre-with-line > div {
+      padding-left: 15px;
+      padding-right: 15px;
+      border-right-style: dotted;
+      border-right-width: 0.7px; }
+  .nav-customized ul > li .reverse-color {
+    color: white;
+    border-right-color: white; }
+    .nav-customized ul > li .reverse-color:hover {
+      color: black; }
+
+.inline {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center; }
+  .inline h4 {
+    display: inline-block;
+    font-size: 1em; }
+  .inline span {
+    margin-top: 10px;
+    height: 1em; }
+
+.basic-block, #main-unit, #timeline > .row > .col-md-9, #timeline > .row > .col-md-3, #csr > .row > .left, #csr > .row > .right {
+  background-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: white;
+  height: 100%; }
+
+#main-unit > .row > .img {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  #main-unit > .row > .img:nth-of-type(1) {
+    padding-right: 0px; }
+  #main-unit > .row > .img:nth-of-type(2) {
+    padding-left: 0px; }
+#main-unit > .row .col-md-4 .type-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  height: 100px;
+  padding-top: 20px; }
+  #main-unit > .row .col-md-4 .type-block:nth-of-type(1) {
+    background-color: red; }
+  #main-unit > .row .col-md-4 .type-block:nth-of-type(2) {
+    background-color: #000082; }
+  #main-unit > .row .col-md-4 .type-block:nth-of-type(3) {
+    background-color: #eb64a5; }
+  #main-unit > .row .col-md-4 .type-block:nth-of-type(4) {
+    background-color: #90c600; }
+
+#timeline > .row > .col-md-9 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-right-width: 15px;
+  border-right-color: #f0f0f0; }
+  #timeline > .row > .col-md-9 .col-md-6:first-of-type {
+    padding-right: 0px; }
+  #timeline > .row > .col-md-9 .col-md-6 h5 {
+    color: red;
+    font-weight: normal; }
+  #timeline > .row > .col-md-9 .col-md-6 .top > h5 {
+    display: inline; }
+  #timeline > .row > .col-md-9 .col-md-6 .top > time {
+    float: right; }
+
+#timeline > .row > .col-md-9 .col-md-6 .inline h4 {
+  display: inline-block;
+  font-size: 1em; }
+#timeline > .row > .col-md-9 .col-md-6 .inline span {
+  margin-top: 10px;
+  height: 1em; }
+#timeline > .row > .col-md-3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-left-width: 15px;
+  border-left-color: #f0f0f0; }
+  #timeline > .row > .col-md-3 h1 {
+    color: red;
+    margin-top: 0px; }
+  #timeline > .row > .col-md-3 .inline h4 {
+    display: inline-block;
+    font-size: 1em; }
+  #timeline > .row > .col-md-3 .inline span {
+    margin-top: 10px;
+    height: 1em; }
+
+#csr > .row > .left {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  height: 100%;
+  border-right-width: 15px;
+  border-right-color: #f0f0f0; }
+  #csr > .row > .left > h3 {
+    font-size: 1.3em;
+    color: green;
+    margin-top: 0px; }
+  #csr > .row > .left .inline {
+    justify-content: flex-end; }
+#csr > .row > .right {
+  padding-bottom: 15px;
+  border-left-width: 15px;
+  border-left-color: #f0f0f0; }
+  #csr > .row > .right .col-md-6 > div > span {
+    color: red; }
+  #csr > .row > .right .col-md-6 > div > h6 {
+    display: inline-block; }
+
+/*# sourceMappingURL=week6SC.css.map */

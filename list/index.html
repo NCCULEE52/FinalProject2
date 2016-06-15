@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no">
+  <title>City Bike</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="listcss.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="my-icons-collection-2/font/flaticon.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
+  <link rel=stylesheet type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header">
+    <img src="menu-options.png" class="img-responsive nav" alt="menu">
+    <img src="logo.png" class="img-responsive" id="cityBikeLogo" alt="City Bike logo">
+    <img src="magnifying-glass.png" class="img-responsive nav" alt="search" data-toggle="modal" data-target="#myModal">
+
+  </div>
+  <div id="menu">
+
+  </div>
+  <div class="container">
+    <p id="title" class="row">都市休閒</p>
+    <div id="routes-list">
+     <div class="routes">
+      <h1>
+        <p class="start">政大</p>
+        <img src="right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end">動物園</p>
+        <canvas id="rain" width="130" height="130">
+        </h1>
+      </canvas>
+      <h2>
+        時程&nbsp; <p class="time">5</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">1.9</p>&nbsp;公里 &nbsp; &nbsp;文山區
+      </h2>
+    </div>
+    <div class="routes">
+      <h1>
+        <p class="start">政大</p>
+        <img src="right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end">動物園</p>
+        <canvas id="route1" width="130" height="130">
+        </h1>
+      </canvas>
+      <h2>
+        時程&nbsp; <p class="time">5</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">1.9</p>&nbsp;公里 &nbsp; &nbsp;文山區
+      </h2>
+    </div>
+    <div class="routes">
+      <h1>
+        <p class="start">政大</p>
+        <img src="right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end">動物園</p>
+        <canvas id="route2" width="130" height="130">
+        </h1>
+      </canvas>
+      <h2>
+        時程&nbsp; <p class="time">5</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">1.9</p>&nbsp;公里 &nbsp; &nbsp;文山區
+      </h2>
+    </div>
+    <div class="routes">
+      <h1>
+        <p class="start">政大</p>
+        <img src="right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end">動物園</p>
+        <canvas id="route3" width="130" height="130">
+        </h1>
+      </canvas>
+      <h2>
+        時程&nbsp; <p class="time">5</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">1.9</p>&nbsp;公里 &nbsp; &nbsp;文山區
+      </h2>
+    </div>
+    <div class="routes">
+      <h1>
+        <p class="start">政大</p>
+        <img src="right-arrow.png" class="img-responsive arrow" alt="arrow">
+        <p class="end">動物園</p>
+        <canvas id="route4" width="130" height="130">
+        </h1>
+      </canvas>
+      <h2>
+        時程&nbsp; <p class="time">5</p>&nbsp;分鐘 &nbsp; &nbsp;路程&nbsp; <p class="distance">1.9</p>&nbsp;公里 &nbsp; &nbsp;文山區
+      </h2>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="listjs.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="homejs.js"></script>
+<!--  -->
+
+<!-- == -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <span class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </span>
+        <!--  <h4 class="modal-title">Search Now</h4> -->
+        <div id="heading">
+          <br>
+          <br>
+          <br>
+          <label for="cboPlatform">起點</label>
+
+          <select    id="ChooseTeam">
+            <option value=""></option>
+            <option value="LAA">Angels</option>
+            <option value="HOU">Astros</option>
+            <option value="OAK">Athletics</option>
+            <option value="TOR">Blue_Jays</option>
+            <option value="ATL">Braves</option>
+            <option value="MIL">Brewers</option>
+            <option value="STL">Cardinals</option>
+            <option value="KC">City_Royals</option>
+            <option value="CHC">Cubs</option>
+            <option value="ARI">Diamondbacks</option>
+            <option value="LAD">Dodgers</option>
+            <option value="SF">Giants</option>
+            <option value="CLE">Indians</option>
+            <option value="MIA">Marlins</option>
+            <option value="SEA">Mariners</option>
+            <option value="NYM">Mets</option>
+            <option value="WSH">Nationals</option>
+            <option value="BAL">Orioles</option>
+            <option value="SD">Padres</option>
+            <option value="PHI">Phillies</option>
+            <option value="PIT">Pirates</option>
+            <option value="TEX">Rangers</option>
+            <option value="TB">Rays</option>
+            <option value="BOS">Red_Sox</option>
+            <option value="CIN">Reds</option>
+            <option value="COL">Rockies</option>
+            <option value="DET">Tigers</option>
+            <option value="MIN">Twins</option>
+            <option value="CWS">White_Sox</option>
+            <option value="NYY">Yankees</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="heading">
+          <label for="cboPlatform">終點</label>
+
+          <select    id="ChooseTeam">
+            <option value=""></option>
+            <option value="LAA">Angels</option>
+            <option value="HOU">Astros</option>
+            <option value="OAK">Athletics</option>
+            <option value="TOR">Blue_Jays</option>
+            <option value="ATL">Braves</option>
+            <option value="MIL">Brewers</option>
+            <option value="STL">Cardinals</option>
+            <option value="KC">City_Royals</option>
+            <option value="CHC">Cubs</option>
+            <option value="ARI">Diamondbacks</option>
+            <option value="LAD">Dodgers</option>
+            <option value="SF">Giants</option>
+            <option value="CLE">Indians</option>
+            <option value="MIA">Marlins</option>
+            <option value="SEA">Mariners</option>
+            <option value="NYM">Mets</option>
+            <option value="WSH">Nationals</option>
+            <option value="BAL">Orioles</option>
+            <option value="SD">Padres</option>
+            <option value="PHI">Phillies</option>
+            <option value="PIT">Pirates</option>
+            <option value="TEX">Rangers</option>
+            <option value="TB">Rays</option>
+            <option value="BOS">Red_Sox</option>
+            <option value="CIN">Reds</option>
+            <option value="COL">Rockies</option>
+            <option value="DET">Tigers</option>
+            <option value="MIN">Twins</option>
+            <option value="CWS">White_Sox</option>
+            <option value="NYY">Yankees</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="heading">
+          <label for="cboPlatform">路程</label>
+          <select    id="ChooseTeam">
+            <option value=""></option>
+            <option value="LAA">Angels</option>
+            <option value="HOU">Astros</option>
+            <option value="OAK">Athletics</option>
+            <option value="TOR">Blue_Jays</option>
+            <option value="ATL">Braves</option>
+            <option value="MIL">Brewers</option>
+            <option value="STL">Cardinals</option>
+            <option value="KC">City_Royals</option>
+            <option value="CHC">Cubs</option>
+            <option value="ARI">Diamondbacks</option>
+            <option value="LAD">Dodgers</option>
+            <option value="SF">Giants</option>
+            <option value="CLE">Indians</option>
+            <option value="MIA">Marlins</option>
+            <option value="SEA">Mariners</option>
+            <option value="NYM">Mets</option>
+            <option value="WSH">Nationals</option>
+            <option value="BAL">Orioles</option>
+            <option value="SD">Padres</option>
+            <option value="PHI">Phillies</option>
+            <option value="PIT">Pirates</option>
+            <option value="TEX">Rangers</option>
+            <option value="TB">Rays</option>
+            <option value="BOS">Red_Sox</option>
+            <option value="CIN">Reds</option>
+            <option value="COL">Rockies</option>
+            <option value="DET">Tigers</option>
+            <option value="MIN">Twins</option>
+            <option value="CWS">White_Sox</option>
+            <option value="NYY">Yankees</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="heading">
+          <label for="cboPlatform">時間</label>
+
+          <select    id="ChooseTeam">
+            <option value=""></option>
+            <option value="LAA">Angels</option>
+            <option value="HOU">Astros</option>
+            <option value="OAK">Athletics</option>
+            <option value="TOR">Blue_Jays</option>
+            <option value="ATL">Braves</option>
+            <option value="MIL">Brewers</option>
+            <option value="STL">Cardinals</option>
+            <option value="KC">City_Royals</option>
+            <option value="CHC">Cubs</option>
+            <option value="ARI">Diamondbacks</option>
+            <option value="LAD">Dodgers</option>
+            <option value="SF">Giants</option>
+            <option value="CLE">Indians</option>
+            <option value="MIA">Marlins</option>
+            <option value="SEA">Mariners</option>
+            <option value="NYM">Mets</option>
+            <option value="WSH">Nationals</option>
+            <option value="BAL">Orioles</option>
+            <option value="SD">Padres</option>
+            <option value="PHI">Phillies</option>
+            <option value="PIT">Pirates</option>
+            <option value="TEX">Rangers</option>
+            <option value="TB">Rays</option>
+            <option value="BOS">Red_Sox</option>
+            <option value="CIN">Reds</option>
+            <option value="COL">Rockies</option>
+            <option value="DET">Tigers</option>
+            <option value="MIN">Twins</option>
+            <option value="CWS">White_Sox</option>
+            <option value="NYY">Yankees</option>
+          </select>
+        </div>
+        <br>
+        <button type="button" class="btn2 btn-default" data-dismiss="modal">GO !</button>
+      </div>    
+    </div>
+  </div>
+  <!-- == -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+  <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  <script src="homejs.js"></script>
+
+
+
+  <!--  -->
+</body>
+</html>

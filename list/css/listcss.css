@@ -1,0 +1,179 @@
+body{
+	background: #ffffff url("homebackground.png") no-repeat fixed top; 
+	background-size: cover;
+	font-family: "筑紫A丸ゴシック","微軟正黑體", sans-serif;
+}
+#headerAndTitle{
+	position: fixed;
+}
+#header{
+	width: 100%;
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	top: 0px;
+	background-color: #261f28; 
+}
+.nav{
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	margin-top: 45px;
+}
+#cityBikeLogo{
+	display: block;
+	margin: auto;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#routes-list{
+	height: 80vh;
+	overflow: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center; 
+}
+.container{
+	width: 100vw;
+	background-color: rgba(255,255,255,0.5);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center; 
+	margin-top: 230px;
+}
+#title{
+	margin: auto;
+	font-size: 4.5rem;
+	padding-bottom: 30px;
+}
+.routes + .routes{
+	margin-top: 50px;
+}
+.routes{
+	color: white;
+	padding: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-blend-mode: darken;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url(https://photo.network.com.tw/scenery/E86DF158-EDFE-4632-A4B6-FF65CD550DEF_f.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 3px 6px 15px #999999;
+}
+h1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+h1 > p{
+	font-size: 6rem;
+}
+.arrow{
+	width: 90px;
+	height: 90px;
+}
+h2{
+	display: flex;
+	font-size: 3.5rem;
+	padding-top: 20px;
+}
+.btn{
+	margin: auto;
+	box-shadow: 3px 3px 15px #999999;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	font-size: 3rem;
+	color: white;
+	width: 300px;
+	height: 300px;
+}
+.btn + .btn{
+	margin-top: 80px;
+}
+#city-routes:focus{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:focus{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:focus{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#city-routes:active{
+	background-color: #1b6bb2;
+	color: white;
+	opacity: 0.7;
+}
+#nature-routes:active{
+	background-color: #469640;
+	color: white;
+	opacity: 0.7;
+}
+#sport-routes:active{
+	background-color: #ff5252;
+	color: white;
+	opacity: 0.7;
+}
+#text{
+	margin: auto;
+	margin-top: 100px;
+	font-size: 4rem;
+}
+.icon{
+	margin: auto;
+	width: 200px;
+}
+#licenses{
+	display: flex;
+	justify-content: center;
+	padding-top: 270px;
+	font-size: 2rem;
+	color: white;
+}
+#heading select { 
+	background-color: gold;
+	display : inline-block; 
+}
+label {
+	font-size: 3rem;
+
+}
+select {
+	width:150px;
+	height:28px; 
+	border-radius: 8px;
+}
+.modal-content{
+	background-color:#e7e2dd;
+}
+.btn{
+	font-size: 3rem;
+	padding: 20px;
+	border-radius: 90px;
+	color: white;
+	box-shadow: 3px 3px 15px #999999;
+	margin: 1%;
+}
+.btn2{
+	font-size: 4rem;
+	/*padding: 20px;*/
+	border-radius: 30px;
+	color: 	#808889;
+	box-shadow: 3px 8px 15px #999999;
+	margin: 5%;
+}
+
+.search{
+	font-size:90px;
+	/*border-top: 45px;*/
+}
+
+

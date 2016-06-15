@@ -1,0 +1,64 @@
+.recipe-description p,
+.recipe-steps p{
+  color:blue;
+  font:1em/1.5 serif ;  
+}
+
+.ingredients{
+  list-style-type: none;
+}
+.ingredients li{
+  padding:3px 10px;
+  
+}
+
+.ingredients li:nth-child(odd){
+  background-color:rgba(255,255,255,0.5);  
+  
+}
+.ingredient-name{
+  display:inline-block;
+ width:200px;  
+}
+
+article#recipe{
+ 
+  max-width:600px;
+  min-width:400px;
+   background-image:url(https://dl.dropboxusercontent.com/u/3892199/food.png
+  );
+  
+ margin: 3em auto;
+  border-radius:1em;
+}
+#recipe h1{
+  font-size:2em;
+  color:red;
+  padding-top: 2em ;
+}
+
+#recipe img{
+  width:100%;
+  padding:1em;
+  background-color:white;
+  box-sizing:border-box;
+}
+.meta{
+  margin-top:1em;
+  
+}
+
+.meta span{
+  margin-right:2em;
+  
+}
+#recipe h3{
+  font-size:1.5em;
+   
+}
+.box{
+  position:fixed;
+  bottom:10px;
+  margin:2em;
+  padding:1em;
+}
